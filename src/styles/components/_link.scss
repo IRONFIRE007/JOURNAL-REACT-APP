@@ -1,0 +1,12 @@
+.link{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size: 14px;
+    color: $primary;
+    text-align:center;
+     transition: all 0.2s;
+
+    &:hover{
+        color: darken($color: $primary, $amount: 20);
+    }
+}

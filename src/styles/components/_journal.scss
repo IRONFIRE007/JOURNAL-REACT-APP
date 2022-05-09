@@ -1,0 +1,130 @@
+.journal__main-content{
+    display: flex;
+}
+
+.journal_sidebar{
+    background:$dark-grey;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    height:100vh;
+    padding: left 10px;
+    padding-right: 10px;
+    width:500px;
+    position: relative;
+}
+
+.journal_sidebar-navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.journal_sidebar-navbar h3{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.journal_new-entry{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor:pointer;
+    width: 100%;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+    
+
+    &:hover{
+           color:darken($color: $primary, $amount: 10);
+    }
+    
+}
+
+.journal_entries{
+    margin-top:30px;
+    flex: 1 1 auto;
+    overflow-y: scroll;
+}
+
+
+
+
+
+.journal-entry{
+    display: flex;
+    background: #fff;
+    border-radius:4px;
+    color: $dark-grey;
+    margin-bottom:10px;
+    overflow:hidden;
+    cursor: pointer;
+    justify-content:space-between;
+}
+
+
+.journal_entry-picture{
+    height:75px;
+    width: 120px;
+    
+}
+
+.journal_entry-title{
+  font-size:14px;
+  font-weight: bold;
+
+}
+
+.journal_entry-body{
+    padding:10px;
+}
+
+.journal_entry-content{
+    font-size: 10px;
+}
+
+
+.journal-entry-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.journal-entry-date span{
+    font-size: 12px;
+    font-weight:bold;
+    text-transform:capitalize;
+    margin-right:1px;
+}
+
+.nothing_main-context{
+    display: flex;
+    align-items: center;
+    background:$primary;
+    color:#fff;
+    flex-direction: column;
+    justify-content:center;
+    height:100vh;
+}
+
+.nothing_main-context p{
+    font-weight:bold;
+    text-transform:capitalize;
+}
+
+.btn-logout{
+    margin-top: 8px !important; 
+    background:$primary;
+    font-weight: bold;
+    margin: 2px 8px;
+  transition: all 0.4s;
+  border-radius: 2px;
+    &:hover{
+        background: darken($color: $primary, $amount: 20);
+    }
+}
